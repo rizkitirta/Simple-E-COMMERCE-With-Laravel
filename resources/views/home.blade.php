@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-12 mb-4">
-                <img src=" {{ url('assets/logo.png') }} " width="200" class="rounded mx-auto d-block">
+                <h1 style="font-family: pacifico; color: #717D7E; text-align:center;" class="font-weight-bold">Tirta Batik.id</h1>
             </div>
             @foreach ($barangs as $barang)
                 <div class="row mx-auto">
@@ -25,6 +25,6 @@
                     </div>
                 </div>
             @endforeach
-            </div>
         </div>
-        @endsection
+    </div>
+@endsection
