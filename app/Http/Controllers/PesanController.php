@@ -8,6 +8,7 @@ use App\PesananDetail;
 use Auth;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Alert;
 
 class PesanController extends Controller
 {
@@ -80,6 +81,7 @@ class PesanController extends Controller
         $pesanan->jumlah_harga = $pesanan->jumlah_harga + $barang->harga * $request->jumlah_pesanan;
         $pesanan->update();
 
+        alert()->success('Pesanan Berhasil Ditambahkan', 'Sukses');
         return redirect('home');
 
     }
